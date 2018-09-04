@@ -6,7 +6,8 @@
     "prestart": "node buildScripts/startMessage.js",
     "start": "node buildScripts/srcServer.js",
     "share": "lt --port 3000",
-    "parallel": "npm-run-all --parallel start share"
+    "parallel": "npm-run-all --parallel start share",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
   },
   "author": "Cory House",
   "license": "MIT",
